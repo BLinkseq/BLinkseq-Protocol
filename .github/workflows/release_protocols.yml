@@ -1,0 +1,24 @@
+name: Attach PDFs to Release
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v7
+      - name: Upload PDFs
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.event.release.tag_name }}
+        run: |
+          gh release upload "$TAG" \
+            BLink-seq_BeadPrepProtocol.pdf#BLink-seq_BeadPrepProtocol.${TAG}.pdf \
+            BLink-seq_LibraryPrepProtocol.pdf#BLinkseq/BLink-seq_LibraryPrepProtocol.${TAG}.pdf \
+            --clobber
