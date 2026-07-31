@@ -25,6 +25,29 @@ authors:
   given-names: Jennifer K
 preferred-citation:
   type: manual
+  authors:
+  - family-names: Iqbal
+    given-names: Azwad R
+  - family-names: Dimens
+    given-names: Pavel V
+  - family-names: Rick
+    given-names: Jessica A
+  - family-names: Munn
+    given-names: Paul R
+  - family-names: McNairn
+    given-names: Adrian J
+  - family-names: Landis
+    given-names: Jacob B
+  - family-names: Schembri
+    given-names: Rhiannon
+  - family-names: Chan
+    given-names: Yigguang Frank
+  - family-names: Kučka
+    given-names: Marek
+  - family-names: Therkildsen
+    given-names: Nina Overgaard
+  - family-names: Greiner
+    given-names: Jennifer K
 title: BLink-seq Protocol
 version: 0.1
 date-released: 2026-07-31
