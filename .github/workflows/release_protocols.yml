@@ -21,4 +21,5 @@ jobs:
           gh release upload "$TAG" \
             BLink-seq_BeadPrepProtocol.pdf#BLink-seq_BeadPrepProtocol.${TAG}.pdf \
             BLink-seq_LibraryPrepProtocol.pdf#BLink-seq_LibraryPrepProtocol.${TAG}.pdf \
+            BLinkBead_oligos.xlsx#BLinkBead_oligos.${TAG}.xlsx \
             --clobber
